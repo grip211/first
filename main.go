@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/grip211/first/src/pkg/hello"
+	"github.com/grip211/first/src/pkg/message"
 	"log"
 	"math/rand"
 	"os"
@@ -46,8 +47,8 @@ func main() {
 			break
 		}
 	}
-	if !success {
+	if success {
 		fmt.Println("Sorry, you didn't guess my number. It was:", target)
-		fmt.Println("Good by")
+		fmt.Println(message.ExitMessage())
 	}
 }
