@@ -45,5 +45,6 @@ func main() {
 	}
 	if !success {
 		fmt.Println("Sorry, you didn't guess my number. It was:", target)
+		fmt.Println("Good by")
 	}
 }
