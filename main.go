@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"github.com/grip211/first/src/pkg/hello"
 	"log"
 	"math/rand"
 	"os"
@@ -12,6 +13,8 @@ import (
 )
 
 func main() {
+	fmt.Println(hello.Hello())
+
 	seconds := time.Now().Unix()
 	rand.Seed(seconds)
 	target := rand.Intn(100) + 1
